@@ -1,0 +1,76 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.navbar{
+    height: 90px;
+    width: 100%;
+    background:orange;
+    opacity: 80%;
+}
+.logo{
+    width: 90px;
+    height: auto;
+    padding: 0px 80px;
+    border-radius: 50%;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    padding: 6px 6px;
+    font-family:'Times New Roman', Times, serif;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: teal;
+    background-size: 100%;
+    border-radius: 2px;
+
+}
+.list1{
+    display: none;
+    margin: 1em 1em;
+}
+.list1 ul li{
+    margin: 1em 1em;
+}
+.navbar ul li:hover .list1{
+    display: block;
+    position: absolute;
+    background:orange;
+    opacity: 80%;
+    margin-top: -5px;
+    margin-left: -25px;
+    border-radius: 2%;
+}
+.list2{
+    display: none;
+}
+.navbar ul li:hover .list2{
+    display: block;
+    position: absolute;
+    background:orange;
+    opacity: 80%;
+    margin-top: -5px;
+    margin-left: -25px;
+    border-radius: 2%;
+}
