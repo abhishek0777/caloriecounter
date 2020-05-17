@@ -1,22 +1,29 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;    
+}
+
 body{
-	font-family: sans-serif;
-	background: url(bg2.jpg);
-	background-size: cover; 
-	 
+
+    font-family: sans-serif;
+    overflow-x: hidden;
 }
 
-}
-.wrapper{
-    background: url(bg2.jpg);
-    background-size: cover;
-    height: 100vh;
 
-}
+/*.wrapper{*/
+/*    background: url(bg2.jpg);*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+
+/*}*/
+
+/*css for navigation bar*/
 .navbar{
     height: 70px;
     width: 100%;
-    background: #000000;;
-    opacity: 80%;
+    background: #000000;
+    opacity: 100%;
 }
 .logo{
     width: 100px;
@@ -32,22 +39,25 @@ body{
     list-style: none;
     margin: 0 8px;
     display: inline-block;
-    line-height: 80px;
+    line-height: 70px;
 }
 .navbar ul li a{
     text-decoration: none;
     color:#fff;
     font-size: 20px;
-    padding: 6px 6px;
+    padding: 21px 20px;
     font-family:'Times New Roman', Times, serif;
-    transition: .4s;
+    transition: .9s;
+    
 }
 .navbar ul li a.active,
 .navbar ul li a:hover{
-    background: red;
+    /*background: red;*/
+	background-image: linear-gradient(45deg,#01D4B4,skyblue);
     opacity: 0.9;
     background-size: 100%;
-    border-radius: 2px;
+    border-radius: 10px;
+    
 
 }
 .list1{
@@ -72,7 +82,7 @@ body{
 }
 .list2 ul li{
     margin: 0 ;
-    padding:0px 0px 0px 15px;
+    padding:0px 0px 0px 0px;
 }
 .navbar ul li:hover .list2{
     display: block;
@@ -85,7 +95,7 @@ body{
 }
 
 
-
+/*food table content*/
 .table-content{
 	position: relative;
 	width :700 px;
@@ -118,9 +128,9 @@ h2{
 }
 
 p{
-	margin-right:0px;
-	right:0;
-	transform: translate(1200px, -20px);
+	margin-right:20px;
+	right:20;
+	transform: translate(1000px, -20px);
 	color:orange;
 
 }

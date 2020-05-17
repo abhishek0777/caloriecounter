@@ -1,0 +1,179 @@
+<?php
+session_start();
+if(!isset($_SESSION['email']))
+{
+    include('../login.php');
+}
+else
+{
+    
+?>
+<!--html code start here-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Food</title>
+<link rel="stylesheet" href="food.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+
+
+	<div class="wrapper">
+            <nav class="navbar">
+                <img src="../logo.png" class="logo">
+                <ul>
+                    <li ><a href="../home.php" ><i class="fa fa-home"></i>Home</a> 
+                        <!--<div class="list1">-->
+                        <!--    <ul>-->
+                        <!--        <li ><a href="#">My Home</a> </li><br><hr>-->
+                        <!--        <li ><a href="#">Goals</a> </li><br><hr>-->
+                        <!--        <li ><a href="#">Check in</a> </li><br><hr>-->
+                        <!--    </ul>-->
+                        <!--</div>--></li>
+                    <li ><a href="food/food.php" class="active"><i class="fa fa-cutlery"></i>  Food</a>
+                         </li>
+                    <li ><a href="../exercise.php"><i class="fa fa-child"></i>   Exercise</a> </li>
+                    <li ><a href="#"><i class="fa fa-calendar"></i> Reports</a> </li>
+                    <li ><a href="../help.php"><i class="fa fa-question-circle"></i>  Help</a> </li>
+                    <li ><a href="#"><i class="fa fa-cog"></i> Setting</a> </li>
+                    <li ><a href="../logout.php"><i class="fa fa-sign-out"></i>  Logout</a> </li>
+                </ul>
+            </nav>
+        
+<h2 style="transform: translate(0 ,40px);"> 2000, 1500, and 1200 Calorie Sample Meal Plans</h2>
+<div>
+	<table class="table-content" style="transform: translate(-160px, 70px);">
+		<thead>
+			<tr>
+				<th>Meal</th>
+				<th>1200 Cal Plan</th>
+				<th>1500 Cal Plan</th>
+				<th>2000 Cal Plan</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Breakfast</td>
+				<td>All-bran cereal (125) Milk (50) Banana (90)</td>
+				<td>Granola (120) Greek yogurt (120) Blueberries (40)</td>
+				<td>Buttered toast (150) Egg (80) Banana (90) Almonds (170)</td>
+			</tr>
+			<tr>
+				<td>Snack</td>
+				<td>Cucumber (30) Avocado dip (50)</td>
+				<td>Orange (70)</td>
+				<td>Greek yogurt (120) Blueberries (40)</td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td>345 Calories</td>
+				<td>350 Calories</td>
+				<td>650 Calories</td>
+			</tr>
+			<tr>
+				<td>Lunch</td>
+				<td>Grilled cheese with tomato (300) Salad (50)</td>
+				<td>Chicken and vegetable soup (300) Bread (100)</td>
+				<td>Grilled chicken (225) Grilled vegetables (125) Pasta (185)</td>
+			</tr><tr>
+				<td>Snack</td>
+				<td>Walnuts (100)</td>
+				<td>Apple (75) Peanut butter (75)</td>
+				<td>Hummus (50) Baby carrots (35) Crackers (65)</td>
+			</tr><tr>
+				<td>Total</td>
+				<td>450 Calories</td>
+				<td>550 Calories</td>
+				<td>685 Calories</td>
+			</tr><tr>
+				<td>Dinner</td>
+				<td>Grilled Chicken (200) Brussel sprouts (100) Quinoa (105)</td>
+				<td>Steak (375) Mashed potatoes (150) Asparagus (75)</td>
+				<td>Grilled salmon (225) Brown rice (175) Green beans (100) Walnuts (165)</td>
+			</tr><tr>
+				<td>Total</td>
+				<td>405 Calories</td>
+				<td>600 Calories</td>
+				<td>665 Calories</td>
+			</tr>
+		</tbody>
+	</table><br><br><br>
+	<div>
+		<h2 style="transform: translate(0, 40px);">Energy from Common Food Components</h2>
+	<table class="table-content" style="transform: translate(-170px,80px);" >
+		<thead>
+			<tr>
+				<th>Food Components</th>
+				<th>kJ per gram	</th>
+				<th>Calorie (kcal) per gram	</th>
+				<th>kJ per ounce</th>
+				<th>Calorie (kcal) per ounce
+</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Fats</td>
+				<td>37</td>
+				<td>8.8</td>
+				<td>1,049</td>
+				<td>249</td>
+			</tr>
+			<tr>
+				<td>Proteins</td>
+				<td>17</td>
+				<td>4.1</td>
+				<td>482</td>
+				<td>116</td>
+			</tr>
+			<tr>
+				<td>Carbohydrates</td>
+				<td>17</td>
+				<td>4.1</td>
+				<td>482</td>
+				<td>116</td>
+			</tr>
+			<tr>
+				<td>Fiber</td>
+				<td>8</td>
+				<td>1.9</td>
+				<td>227</td>
+				<td>54</td>
+			</tr>
+			<tr>
+				<td>Ethanol(drinking alcohol)</td>
+				<td>29</td>
+				<td>6.9</td>
+				<td>822</td>
+				<td>196</td>
+			</tr>
+			<tr>
+				<td>Organic Acids</td>
+				<td>13</td>
+				<td>3.1</td>
+				<td>369</td>
+				<td>88</td>
+			</tr>
+			<tr>
+				<td>Polyols (sugar alcohols, sweeteners)</td>
+				<td>10</td>
+				<td>2.4</td>
+				<td>283</td>
+				<td>68</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p style="transform: translate(1300px,40px)"> <a href="food.php"> Prev </a></p>
+
+
+
+
+
+
+</body>
+</html>
+<?php }
+?>

@@ -14,10 +14,10 @@ body{
     color: #fff;
     top: 50%;
     left: 50%;
-    position: fixed;
+    position: relative;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px;
+    padding: 35px 30px;
     border-radius:10%;
 }
 .content1
@@ -34,18 +34,18 @@ body{
 .header{
     color:white;
     width:100%;
-    opacity:80%;
+    opacity:inherit;
     height:40px;
     background:#001200;
     left:50%;
     top:20px;
-    padding:10px;
-    box-sizing:border-box;
+    /*padding:10px;*/
+ 
   position:relative;
     transform:translate(-50%,-50%);
-    border-radius:20%;
     border-color:white;
     text-align:center;
+  
     
 }
 a:link, a:visited {
