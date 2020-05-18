@@ -5,9 +5,226 @@
 }
 
 body{
-
+ 
     font-family: sans-serif;
     overflow-x: hidden;
+}
+/*report card*/
+.personal h3{
+color:	#00CED1;}
+
+.clower p{
+font-family:sans-serif;
+font-size:15px;
+color:#000}
+
+.endreport{
+    float:right;
+        width:100%;
+    height:800px;
+
+background:url('endreport.png');
+background-size:cover;
+
+    border-radius: 6px;
+    position:absolute;
+    top:55%;
+    right:50%;
+    transform:translate(50%,80%);
+    box-shadow: 0px 1px 10px 1px #000; 
+	margin-bottom:20px;
+	
+}
+
+.content{
+    float:right;
+        width:600px;
+    height:800px;
+background-image: linear-gradient(0deg,rgba(76,161,175,0.8),rgba(196,224,229,0.8));
+/*background:url('pc2.png');*/
+background-size:cover;
+   
+    border-radius: 6px;
+    position:absolute;
+    top:55%;
+    right:50%;
+    transform:translate(50%,-55%);
+    box-shadow: 0px 1px 10px 1px #000;
+	margin-bottom:20px;
+	
+}
+.cupper{
+    height:150px;
+      /*background: #000000;*/
+  
+}
+.cimage img{
+    background: white;
+    width: 100px;
+    height: 100;
+    border-radius: 50%;
+    padding :1px;
+    transform: translate(250px,-50px);
+}
+.clower{
+
+    height: auto;
+	padding:2px;
+   
+    /*background-image: linear-gradient(0deg,#01D4B4,#FF9C00);*/
+}
+
+.cpersonal{
+    transform: translate(10px,-50px);
+    color:black;
+    margin-right:9px;
+}
+
+
+/*last day intake calorie*/
+.calorieintake{
+margin-top:45px;
+padding:20px 90px;
+    
+}
+.calorieintake input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.calorieintake input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.calorieintake input[type="submit"]
+{
+    width: 120px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.calorieintake input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    
+}
+.calorieintake a{
+    text-decoration: none ;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.calorieintake a:hover
+{
+    color:#ffc107;
+}
+
+
+.orange{
+    padding:10px;
+    width:20px;
+    height:20px;
+    background-color:#FFB828;
+}
+.purple{
+      width:20px;
+    height:20px;
+    background-color:#8510d8
+
+}
+
+
+/*code of pie chart*/
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 320px; 
+    max-width: 1200px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+/*bar graph css*/
+#container2 {
+    margin-top:20px;
+    height: 400px; 
+}
+
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+
+
+input[type="number"] {
+    min-width: 50px;
 }
 
 
@@ -28,7 +245,7 @@ body{
 .logo{
     width: 100px;
     height: 70px;
-    padding: 0px 80px;
+    padding: 0px 0px;
     border-radius:50%;
 }
 .navbar ul{
