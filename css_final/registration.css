@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0 ;
+    background: url(health.jpg);
+    background-size: cover;
+    background-position-x: initial;
+    font-family : sans-serif;
+}
+.container{
+    width: 400px ;
+    height: 700px;
+    background: #ADE93A;
+    opacity: 90%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 35px 30px;
+    border-radius:10%;
+}
+.content1
+{
+   background:#de6b28;
+   margin:0;
+   padding:12px;
+}
+.content2{
+    background:#438696;
+    margin:0;
+    padding:12px;
+}
+.header{
+    color:white;
+    width:100%;
+    opacity:inherit;
+    height:40px;
+    background:#001200;
+    left:50%;
+    top:20px;
+    /*padding:10px;*/
+ 
+  position:relative;
+    transform:translate(-50%,-50%);
+    border-color:white;
+    text-align:center;
+  
+    
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}

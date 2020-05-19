@@ -1,0 +1,140 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;    
+}
+
+body{
+
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background: url(exer.jpg);
+    background-size: cover; 
+}
+
+
+/*.wrapper{*/
+/*    background: url(bg2.jpg);*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+
+/*}*/
+
+/*css for navigation bar*/
+.navbar{
+    height: 70px;
+    width: 100%;
+    background: #000000;
+    opacity: 100%;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    padding: 0px 80px;
+    border-radius:50%;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 70px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    padding: 21px 20px;
+    font-family:'Times New Roman', Times, serif;
+    transition: .9s;
+    
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    /*background: red;*/
+    background-image: linear-gradient(45deg,#01D4B4,skyblue);
+    opacity: 0.9;
+    background-size: 100%;
+    border-radius: 10px;
+    
+
+}
+.list1{
+    display: none;
+    margin: 0px 0px;
+}
+.list1 ul li{
+    margin: 0 ;
+    padding:0px 0px 0px 10px;
+}
+.navbar ul li:hover .list1{
+    display: block;
+    position: absolute;
+    background: #000000;
+    opacity: 100%;
+    margin-top: -25px;
+    margin-left: -15px;
+    border-radius: 2%;
+}
+.list2{
+    display: none;
+}
+.list2 ul li{
+    margin: 0 ;
+    padding:0px 0px 0px 0px;
+}
+.navbar ul li:hover .list2{
+    display: block;
+    position: absolute;
+    background:#000000;
+    opacity: 100%;
+    margin-top: -25px;
+    margin-left: -15px;
+    border-radius: 2%;
+}
+
+
+/*food table content*/
+.table-content{
+    position: relative;
+    width :700 px;
+    margin-left: 30%;
+    text-align: center;
+    margin-top:40px;
+    table-layout: fixed;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+
+}
+.table-content thead tr {
+    background: linear-gradient(0deg,#42275a,#734b6d);
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+}
+.table-content th,
+.table-content td{
+   padding: 10px 10px;
+}
+
+tr td{
+    border:2px solid black;
+    background:linear-gradient(40deg,#ff5f6d , #ffc371
+);
+}
+h2{
+    margin-left: 100px;
+    font-weight: bold;
+    transform: translate(100px,30px);
+    text-shadow: 3px 3px 5px yellow;
+     opacity: 1;
+    font-family: serif;
+    text-shadow: #000;
+    border-radius: 15px;
+    font-size: 30px;
+
+}
